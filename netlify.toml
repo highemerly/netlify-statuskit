@@ -2,6 +2,9 @@
   command = "npm run build"
   publish = "dist"
 
+[build.environment]
+  TZ="Asia/Tokyo"
+
 [context.deploy-preview]
   command = "npm run build-preview"
 
