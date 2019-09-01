@@ -2,9 +2,9 @@
   <img src="/images/icon-large-ok.svg" />
   {{ with .Date.Local }}
     {{ $latestDate := dateFormat "2006-01-02T15:04:05" .}}
-    <p id="days-since-latest" data-latest-incident-date="{{ $latestDate }}">最後のインシデント: {{ .Format "02 Jan 2006 15:04 MST" }}</p>
+    <p id="days-since-latest" data-latest-incident-date="{{ $latestDate }}">最後の問題: {{ .Format "02 Jan 2006 15:04 MST" }}</p>
   {{ else }}
-    <p>インシデントは全て解決済みで，問題は報告されていません。</p>
+    <p>問題は全て解決済みで，あらたな課題は報告されていません。</p>
   {{ end }}
 </div>
 

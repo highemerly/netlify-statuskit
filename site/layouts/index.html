@@ -6,7 +6,7 @@
 {{ partial "systems" (dict "content" . "incidents" $active) }}
 
 {{ with $active }}
-  <div class="section-title mute">発生中のインシデント</div>
+  <div class="section-title mute">発生中の問題</div>
   {{ range $active }}
     {{ partial "incident" . }}
   {{ end }}
@@ -18,11 +18,11 @@
 {{ $recents := first 3 (where $incidents "Params.resolved" "==" true) }}
 {{ with $recents }}
 <div class="history">
-  <div class="section-title">過去発生していたインシデント</div>
+  <div class="section-title">過去発生していた問題</div>
   {{ range $recents }}
     {{ partial "incident" . }}
   {{ end }}
-  <a href="/incidents" class="see-more">すべてのインシデントを見る</a>
+  <a href="/incidents" class="see-more">すべての問題を見る</a>
 </div>
 {{ end }}
 
