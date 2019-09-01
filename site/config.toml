@@ -13,4 +13,4 @@ title = "Status of handon.club"
 # You'll be able to change their status every time
 # you open or update an incident.
 # Replace these examples with your own system names.
-systems = ["Web&API", "Streaming", "Media upload/view", "Fediverse push/pull", "Search"]
+systems = ["Web&API", "Streaming", "Media", "Search"]
