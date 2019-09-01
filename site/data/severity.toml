@@ -1,9 +1,9 @@
 [descriptions]
-  ok = "Up and running"
-  under-maintenance = "Under maintenance"
-  degraded-performance = "Degraded performance"
-  partial-outage = "Partial outage"
-  major-outage = "Major outage"
+  ok = "OK"
+  under-maintenance = "メンテナンス中"
+  degraded-performance = "パフォーマンス低下中"
+  partial-outage = "一部停止中"
+  major-outage = "完全停止中"
 
 [alerts]
   ok = "ok"

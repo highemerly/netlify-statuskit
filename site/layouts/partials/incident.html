@@ -12,7 +12,7 @@
     <p class="color-{{ $alert }}">
       {{- index .Site.Data.severity.descriptions $severity -}}
     </p>
-    <p class="small">Affected Systems:
+    <p class="small">対象システム:
       <span class="color-{{ $alert }}">
         {{- delimit .Params.affectedsystems ", " -}}
       </span>
